@@ -1,0 +1,10 @@
+apiVersion: skaffold/v4beta8
+kind: Config
+metadata:
+  name: skaffold-set-bug
+manifests:
+  # rawYaml:
+  #   - k8s/base/resources.yaml
+  kustomize:
+    paths:
+      - k8s/overlays/prod
